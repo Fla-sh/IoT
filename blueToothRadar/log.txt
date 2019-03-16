@@ -1,0 +1,32 @@
+Discovery started
+hci0 type 7 discovering on
+hci0 dev_found: 1B:8C:F4:7C:46:31 type LE Random rssi -79 flags 0x0004 
+AD flags 0x00 
+eir_len 31
+hci0 dev_found: 27:AC:20:C6:8D:00 type LE Random rssi -85 flags 0x0004 
+AD flags 0x00 
+eir_len 31
+hci0 dev_found: F8:77:B8:B2:FB:12 type LE Public rssi -85 flags 0x0000 
+AD flags 0x1e 
+name [TV] Samsung 5 Series (40)
+hci0 dev_found: 45:D9:B0:3C:60:97 type LE Random rssi -85 flags 0x0000 
+AD flags 0x1a 
+name [LG] webOS TV UJ6519
+hci0 dev_found: E4:A7:C5:B5:69:51 type BR/EDR rssi -48 flags 0x0000 
+name Sliwka
+hci0 dev_found: E4:A7:C5:B5:69:51 type BR/EDR rssi -44 flags 0x0000 
+name Sliwka
+hci0 dev_found: 77:D1:0E:19:0A:06 type LE Random rssi -85 flags 0x0000 
+AD flags 0x1a 
+eir_len 3
+hci0 dev_found: E4:A7:C5:B5:69:51 type BR/EDR rssi -49 flags 0x0000 
+name Sliwka
+hci0 dev_found: E4:A7:C5:B5:69:51 type BR/EDR rssi -50 flags 0x0000 
+name Sliwka
+hci0 dev_found: E4:A7:C5:B5:69:51 type BR/EDR rssi -48 flags 0x0000 
+name Sliwka
+hci0 dev_found: E4:A7:C5:B5:69:51 type BR/EDR rssi -51 flags 0x0000 
+eir_len 5
+hci0 dev_found: D0:7E:35:D7:8F:60 type BR/EDR rssi -80 flags 0x0000 
+name AMANDA1922
+hci0 type 7 discovering off

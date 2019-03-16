@@ -1,0 +1,1 @@
+[0;35m <REL_MOD> [0m Switched relay no. 10 on pin no. 10 to state 1 and is now in sate off
