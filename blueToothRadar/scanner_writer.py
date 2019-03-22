@@ -78,7 +78,7 @@ def scanner():
                             int(result[known_device]),
                             colors.Colors.RESET.value))
 
-                        running_devices.append(device_address + "\n")
+                        running_devices.append(known_device + "\n")
                 else:
                     console.Console().write("{} {} {} {} Device {} {} {} with address {} {} {} not detected {}".format(
                         colors.Colors.BOLD.value,
@@ -86,9 +86,9 @@ def scanner():
                         colors.Colors.RESET.value,
                         console.Tags.BLT_RAD.value,
                         colors.Colors.YELLOW.value,
-                        devices.KNOW_DEVICES[device_address].get_name(),
+                        devices.KNOW_DEVICES[known_device].get_name(),
                         colors.Colors.RESET.value, colors.Colors.CYAN.value,
-                        device_address,
+                        known_device,
                         colors.Colors.RED.value,
                         colors.Colors.RESET.value))
 
