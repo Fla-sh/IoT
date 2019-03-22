@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-
+from jointConsole import joint_console as console
 
 class Relay:
     def __init__(self):
@@ -37,7 +37,15 @@ class Relay:
         state = self.relay_state_to_logical_state[state]
         self.set_pin_to_out(pin_number)
         GPIO.output(pin_number, state)
-        print("Switched pin {} to {}".format(pin_number, GPIO.input(pin_number)))
+        console.Console().write("{} Switched pin {} {} {} to {} {} {}".format(
+            console.Tags.REL_MOD.value,
+            console.colors.Colors.YELLOW.value,
+            pin_number,
+            console.colors.Colors.RESET.value,
+            console.colors.Colors.YELLOW.value,
+            GPIO.input(pin_number),
+            console.colors.Colors.RESET.value
+        ))
 
     def off(self, relay_number):
         state = "off"
@@ -45,7 +53,15 @@ class Relay:
         state = self.relay_state_to_logical_state[state]
         self.set_pin_to_out(pin_number)
         GPIO.output(pin_number, state)
-        print("Switched pin {} to {}".format(pin_number, GPIO.input(pin_number)))
+        console.Console().write("{} Switched pin {} {} {} to {} {} {}".format(
+            console.Tags.REL_MOD.value,
+            console.colors.Colors.YELLOW.value,
+            pin_number,
+            console.colors.Colors.RESET.value,
+            console.colors.Colors.YELLOW.value,
+            GPIO.input(pin_number),
+            console.colors.Colors.RESET.value
+        ))
 
     #def set_state(self, pin_number, state):
 

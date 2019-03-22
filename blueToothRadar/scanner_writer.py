@@ -62,10 +62,7 @@ def scanner():
             for known_device in devices.KNOW_DEVICES:
                 if known_device in result:
                     if result[known_device] > detection_threshold:
-                        console.Console().write("{} {} {} {} Device {} {} {} with address {} {} {} detected {} its avarange RSSI is {} {} {}".format(
-                            colors.Colors.BOLD.value,
-                            datetime.datetime.now(),
-                            colors.Colors.RESET.value,
+                        console.Console().write("{} Device {} {} {} with address {} {} {} detected {} its avarange RSSI is {} {} {}".format(
                             console.Tags.BLT_RAD.value,
                             colors.Colors.YELLOW.value,
                             devices.KNOW_DEVICES[known_device].get_name(),
@@ -80,10 +77,7 @@ def scanner():
 
                         running_devices.append(known_device + "\n")
                 else:
-                    console.Console().write("{} {} {} {} Device {} {} {} with address {} {} {} not detected {}".format(
-                        colors.Colors.BOLD.value,
-                        datetime.datetime.now(),
-                        colors.Colors.RESET.value,
+                    console.Console().write("} Device {} {} {} with address {} {} {} not detected {}".format(
                         console.Tags.BLT_RAD.value,
                         colors.Colors.YELLOW.value,
                         devices.KNOW_DEVICES[known_device].get_name(),
