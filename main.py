@@ -3,7 +3,7 @@ import os
 import time
 from blueToothRadar import radar
 from jointConsole import colors
-
+from lights import controller
 
 def setup():
     radar.Radar().start()
@@ -11,7 +11,7 @@ def setup():
 
 def loop():
     while True:
-        relay.switch_after_scan()
+        controller.Controller().update()
         time.sleep(5)
 
 

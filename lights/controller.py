@@ -17,7 +17,7 @@ class Controller:
     def new_devices_in_range(self):
         devices_in_range = scanner.read()
         for known_device in KNOW_DEVICES:
-            switch_number = known_device.get_switch_number()
+            switch_number = KNOW_DEVICES[known_device].get_switch_number()
             if known_device in devices_in_range:
                 self.relay_states[switch_number] = "on"
             else:
