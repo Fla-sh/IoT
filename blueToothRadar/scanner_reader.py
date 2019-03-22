@@ -23,7 +23,7 @@ def read():
         console.Tags.BLT_RAD.value,
         colors.Colors.YELLOW.value,
         found_devices,
-        colors.Colors.RESET
+        colors.Colors.RESET.value
     ))
 
     return found_devices

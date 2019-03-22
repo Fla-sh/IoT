@@ -77,7 +77,7 @@ def scanner():
 
                         running_devices.append(known_device + "\n")
                 else:
-                    console.Console().write("} Device {} {} {} with address {} {} {} not detected {}".format(
+                    console.Console().write("{} Device {} {} {} with address {} {} {} not detected {}".format(
                         console.Tags.BLT_RAD.value,
                         colors.Colors.YELLOW.value,
                         devices.KNOW_DEVICES[known_device].get_name(),
