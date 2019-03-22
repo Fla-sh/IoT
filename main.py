@@ -1,21 +1,17 @@
 import threading
 import os
 import time
-from relay_module import relay
+from blueToothRadar import radar
 from jointConsole import colors
-
-class Radar(threading.Thread):
-    def run(self):
-        os.system("/home/relay/IoT/venv/start")
-
+from lights import controller
 
 def setup():
-    Radar().start()
+    radar.Radar().start()
 
 
 def loop():
     while True:
-        relay.switch_after_scan()
+        controller.Controller().update()
         time.sleep(5)
 
 

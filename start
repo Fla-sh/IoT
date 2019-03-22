@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "instrukcja" | sudo -S apt-get
-sudo python3 /home/relay/IoT/venv/blueToothRadar/scanner_writer.py
+sudo python3 /home/relay/IoT/blueToothRadar/scanner_writer.py

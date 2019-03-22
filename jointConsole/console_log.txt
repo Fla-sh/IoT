@@ -1,1 +1,1 @@
-[0;35m <REL_MOD> [0m Switched relay no. 10 on pin no. 10 to state 1 and is now in sate off
+[1;30m 2019-03-22 22:37:22.314388 [0m [0;35m <BLT_RAD> [0m Device [0;33m Galaxy J5 [0m with address [0;36m 94:7B:E7:6E:FD:04 [0;31m not detected [0m

@@ -1,5 +1,6 @@
 import enum
 from jointConsole import colors
+import datetime
 
 
 class Console:
@@ -23,5 +24,24 @@ class Console:
 
 
 class Tags(enum.Enum):
-    REL_MOD = "{} <REL_MOD> {}".format(colors.Colors.PINK.value, colors.Colors.RESET.value)
-    BLT_RAD = "{} <BLT_RAD> {}".format(colors.Colors.PINK.value, colors.Colors.RESET.value)
+    REL_MOD = "{} {} {} {} <REL_MOD> {}".format(
+        colors.Colors.BOLD.value,
+        datetime.datetime.now(),
+        colors.Colors.RESET.value,
+        colors.Colors.PINK.value,
+        colors.Colors.RESET.value
+    )
+    BLT_RAD = "{} {} {} {} <BLT_RAD> {}".format(
+        colors.Colors.BOLD.value,
+        datetime.datetime.now(),
+        colors.Colors.RESET.value,
+        colors.Colors.PINK.value,
+        colors.Colors.RESET.value
+    )
+    LIGHTS = "{} {} {} {} <LIGHTS> {}".format(
+        colors.Colors.BOLD.value,
+        datetime.datetime.now(),
+        colors.Colors.RESET.value,
+        colors.Colors.PINK.value,
+        colors.Colors.RESET.value
+    )
